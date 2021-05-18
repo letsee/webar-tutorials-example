@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>How to use the ArUco Marker target #2 [Using API]</title>
-    <script src="https://developer.letsee.io/api/webar?key=[AUTHENTICATION_KEY_OF_YOUR_PROJECT]"></script>
+    <script src="https://developer.letsee.io/api/webar?key=598fd5bd3ec4e258d90b37f37e33992a529071e346560189fcc83e31e46b7218"></script>
 </head>
 <body>
 <div id="container">
@@ -19,7 +19,7 @@
 <script>
     letsee.ready(() => {
         letsee.start();
-        letsee.addTarget('https://[domain]/[description_filename].json')
+        letsee.addTarget('marker_00.json')
             .then(entity => {
                 let xrElement = letsee.createXRElement(document.getElementById('container'));
                 letsee.bindXRElement(xrElement, entity);

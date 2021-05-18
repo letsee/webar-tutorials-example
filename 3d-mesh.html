@@ -7,7 +7,7 @@
     <!-- THREE.js -->
     <script src="https://unpkg.com/three@0.121.1/build/three.min.js"></script>
     <!-- Letsee WebAR SDK -->
-    <script src="https://developer.letsee.io/api/webar?key=YOUR_AUTHENTICATION_KEY"></script>
+    <script src="https://developer.letsee.io/api/webar?key=598fd5bd3ec4e258d90b37f37e33992a529071e346560189fcc83e31e46b7218"></script>
 
 </head>
 <body>
@@ -21,7 +21,7 @@
         letsee.addTHREE(THREE).then(obj => {
             renderer = obj.renderer;
             scene = obj.scene;
-            letsee.addTarget('[YOUR_TARGET_URI]')
+            letsee.addTarget('https://developer.letsee.io/api-tm/target-manager/target-uid/609ca3af398942b60ead2d06')
                 .then(_entity => {
                     entity = _entity;
 
